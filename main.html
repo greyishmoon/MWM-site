@@ -1,0 +1,183 @@
+﻿<!DOCTYPE HTML>
+
+
+<html>
+
+<!-- #BeginTemplate "main.dwt" -->
+
+<head>
+	<!-- #BeginEditable "Doctitle" -->
+	<title>Welcome to MWM</title>
+ 	<!-- #EndEditable -->
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+
+	<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<!-- slider.css contains the *essential* css needed for the slider to work -->
+    <link href="css/slider.css" rel="stylesheet" />
+    <!-- lightbox.css contains the *essential* css needed for the lighbox to work -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+
+	<!-- jquery CDN with local fallback - ensure jquery-??.js is added to project -->
+<!-- RE-ENABLE NEXT LINE FOR LIVE VERSION - stops Expression web preview function as 'Save embeded file' dialog disabled
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+-->
+	<script>
+		if (!window.jQuery) {
+		    document.write('<script src="js/jquery-1.12.4.min.js"><\/script>');
+		}
+	</script>
+	<!-- end jquery CDN with local fallback -->
+
+	<!-- load slider plugin -->
+	<script src="js/slider.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+	<div id="top">
+
+		<div id="logo">
+			<img alt="Martley Web Mesh logo" src="images/mwm_logo_black_200x75.JPG">
+		</div>
+
+		<div id="social-media">
+			<p>Connect with us</p>
+			<ul>
+				<li><a href="http://www.facebook.com"><img alt="Facebook" src="images/facebook.png"></a></li>
+				<li><a href="https://www.twitter.com"><img alt="Twitter" src="images/twitter.png"></a></li>
+			</ul>
+			<p>Contact us for more information - 01886 000000</p>
+		</div>
+
+	</div>
+
+	<div id="topnav">
+		<ul>
+			<li><a href="index.html">WELCOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="broadband.html">BROADBAND</a></li>
+			<li><a href="support.html">SUPPORT</a></li>
+			<li><a href="volunteering.html">VOLUNTEERING</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</div>
+
+	<!--  Navbar link highlighter - adds 'current' class to active link (ie page that is being viewed) - edit style .current -->
+	<script>
+		$(function(){
+		  $('a').each(function() {
+		    if ($(this).prop('href') == window.location.href) {
+		      $(this).addClass('current');
+		    }
+		  });
+		});
+	</script>
+
+	<!--  Outer wrapper for slider - for presentation only, this can be anything you like -->
+	<div id="banner">
+
+		<!-- start Basic Jquery Slider -->
+		<ul class="bjqs">
+			<!-- #BeginEditable "Banners" -->
+			<li><img src="images/banner1.jpg" title=""></li>
+			<li><img src="images/banner2.jpg" title=""></li>
+			<li><img src="images/banner3.jpg" title=""></li>
+			<!-- #EndEditable -->
+		</ul>
+		<!-- End Basic jQuery Slider -->
+
+	</div>
+	<!-- End outer wrapper -->
+
+	<!-- Slider script - edit settings as required - see guide in web/js/plugins/basic-jquery-slider-master -->
+	<script class="secret-source">
+		jQuery(document).ready(function($) {
+
+			$('#banner').bjqs({
+				height			: 300,
+				width			: 900,
+				responsive		: true,
+				showmarkers		: false,
+				showcontrols	: false,
+				usecaptions		: false,
+				animduration	: 1000,
+				animspeed		: 7000,
+			});
+
+		});
+	</script>
+
+	<div id="subbanner">
+		<h3>Wireless broadband in the Martley area - for the community by the community.</h3>
+	</div>
+
+	<div id="content">
+		<!-- #BeginEditable "Content" -->
+
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dolor hendrerit, facilisis neque vel, bibendum urna. Sed eget dolor hendrerit, facilisis neque vel, bibendum urna.</h3>
+
+		<h1>Welcome to Martley Web Mesh</h1>
+
+		<p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
+		amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+		ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+		free pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+		faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+
+		<p>Aenean vehicula, massa sit amet posuere sodales, arcu odio ultrices
+		dui, blandit pharetra nisl ante non orci. Vestibulum lorem enim,
+		consequat vitae velit ut, dictum vestibulum ex. Nullam condimentum, ante
+		et finibus sagittis, ligula erat efficitur magna, sit amet luctus mauris
+		purus sit amet leo. </p>
+
+	`	<img alt="Roof installation" src="images/roof_installation_215x180.jpg">
+		<img alt="Turning point" src="images/cw_turning_point_90x180.jpg">&nbsp;
+		<img alt="Stanford church installation" height="180" src="images/stanford_installation_215x180.JPG" width="215">
+
+		<h2>Broadband for the community</h2>
+
+		<p>Pellentesque habitant morbi tristique website et web et malesuada
+		fames dreamweaver. Vestibulum tortor quam, feugiat vitae, ultricies
+		eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+		semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+	<!-- #EndEditable -->
+
+	</div>
+
+	<div id="rightside">
+		<!-- #BeginEditable "Rightside" -->
+		<h2>Sidebar Heading</h2>
+		<p>Pellentesque habitant morbi tristique website et web et malesuada fames dreamweaver. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+		<img alt="" src="images/calander_172x122.JPG">
+		<p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		<h2>Sidebar Heading</h2>
+		<p>Pellentesque habitant morbi tristique website et web et malesuada fames dreamweaver. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+
+	<!-- #EndEditable -->
+
+	</div>
+
+	<div id="footer">
+		<p>&copy;Copyright 2016 Martley Web Mesh</p>
+	</div>
+
+
+</div>
+
+<!-- load lightboxplugin -->
+	<script src="js/lightbox.min.js"></script>
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
